@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Paradise</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fdf6f3; }
+    header, footer { background-color: #59b3ff; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    .container { padding: 20px; max-width: 1000px; margin: auto; }
+    h1, h2 { color: #0027ff; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    section { margin-bottom: 40px; }
+    .products, .care { display: flex; gap: 20px; margin-top: 10px; }
+    .card { background-color: white; padding: 10px; border-radius: 5px; flex: 1; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: center; }
+    .card img { width: 100px; height: auto; margin-bottom: 10px; }
+    form { display: grid; gap: 10px; background-color: white; padding: 20px; border-radius: 5px; }
+    input, select, textarea, button { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background-color: #59b3ff; color: white; border: none; cursor: pointer; }
+    footer .columns { display: flex; justify-content: space-around; flex-wrap: wrap; color: white; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pet Center</h1>
+    <nav>
+      <a href="#uslugi">Услуги</a>
+      <a href="#proizvodi">Производи</a>
+      <a href="#zakažite">Закажување</a>
+      <a href="#kontakt">Контакт</a>
+      <a href="#za-nas">За Нас</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Најдоброто за вашите миленици</h2>
+      <p>Професионални услуги и квалитетни производи за вашите крзнени пријатели</p>
+    </section>
+
+    <section id="uslugi">
+      <h2>Нашите услуги</h2>
+      <table>
+        <tr><th>Тип на Услуга</th><th>Опис</th><th>Цена</th></tr>
+        <tr><td>Шишање</td><td>Професионално шишање според вашите потреби</td><td>400-1200 ден.</td></tr>
+        <tr><td>Бањање</td><td>Купање со професионален препарат</td><td>600 ден.</td></tr>
+        <tr><td>Фенирање</td><td>Сушење и израмнување на крзно</td><td>280 ден.</td></tr>
+        <tr><td>Шишање за кучиња (мал раст)</td><td>За кучиња со мал раст на крзно</td><td>550 ден.</td></tr>
+        <tr><td>Шишање за кучиња (голем раст)</td><td>За кучиња со голем раст на крзно</td><td>850 ден.</td></tr>
+        <tr><td>Шишање за мачки</td><td>Посебен третман за сензитивна кожа</td><td>500 ден.</td></tr>
+      </table>
+    </section>
+
+    <section id="proizvodi">
+      <h2>Нашите најпродавани производи за вашите крзнени пријатели</h2>
+      <div class="products">
+        <div class="card">
+          <h3>Ампула за кучиња</h3>
+          <p>Квалитетна заштита од инсекти, изработен од природни материјали и удобен за носење.</p>
+        </div>
+        <div class="card">
+          <h3>Ланчиња за болви</h3>
+          <p>Долготрајна заштита од болви и крлежи. Идеален за вашите миленици.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="care">
+      <div class="card">
+        <h3>Бањање на кучиња</h3>
+        <p>Редовната хигиена е важна за здравјето на вашите миленици. Препорачуваме бањање на секои 4-6 недели.</p>
+      </div>
+      <div class="card">
+        <h3>Сечење нокти</h3>
+        <p>Редовното сечење спречува повреди и инфекции. Нашите експерти користат соодветна опрема и техники.</p>
+      </div>
+    </section>
+
+    <section id="zakažite">
+      <h2>Закажете термин</h2>
+      <form>
+        <select>
+          <option>-Изберете услуга-</option>
+          <option>Шишање</option>
+          <option>Бањање</option>
+          <option>Фенирање</option>
+          <option>Шишање за кучиња (мал раст)</option>
+          <option>Шишање за кучиња (голем раст)</option>
+          <option>Шишање за мачки</option>
+        </select>
+        <input type="date">
+        <button type="submit">Закажи термин</button>
+      </form>
+    </section>
+
+    <section id="kontakt">
+      <h2>Контактирајте не</h2>
+      <form>
+        <input type="text" placeholder="Име">
+        <input type="text" placeholder="Презиме">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Телефон">
+        <textarea rows="4" placeholder="Вашата порака:"></textarea>
+        <button type="submit">Испрати</button>
+      </form>
+    </section>
+
+    <section id="za-nas">
+      <h2>За нас</h2>
+      <div class="card">
+        <p><strong>Локација:</strong> Улица Бул.Партизански одреди. 86, 1000 Скопје, Македонија</p>
+        <p><strong>Работно време:</strong><br> Понеделник-Петок: 10:00-18:00<br> Сабота: 9:00-14:00<br> Недела: Неработен</p>
+        <p><strong>Контакт:</strong> +389 70 123 456 | info@petcenter.com</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="columns">
+      <div>
+        <p><strong>Контакт</strong><br>+389 70 123 456<br>info@petcenter.com</p>
+      </div>
+      <div>
+        <p><strong>Следете не на </strong><br>Facebook<br>Instagram<br>Twitter</p>
+      </div>
+    </div>
+    <p>&copy; 2025 Pet Center Skopje. Сите права задржани.</p>
+  </footer>
+</body>
+</html>
